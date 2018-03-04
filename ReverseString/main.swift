@@ -7,6 +7,7 @@
 //
 
 import Foundation
+print(FirstMethod.reverse(str: "hello world"))
+print(SecondMethod.reverse(str: "hello world"))
 
-print("Hello, World!")
 

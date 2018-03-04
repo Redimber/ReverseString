@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		182EB880204C727C00B2AF00 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182EB87F204C727C00B2AF00 /* main.swift */; };
+		182EB889204C73C900B2AF00 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182EB888204C73C900B2AF00 /* main.swift */; };
+		182EB88B204C740500B2AF00 /* FirstMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182EB88A204C740500B2AF00 /* FirstMethod.swift */; };
+		182EB88D204C75B800B2AF00 /* SecondMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182EB88C204C75B800B2AF00 /* SecondMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +26,9 @@
 
 /* Begin PBXFileReference section */
 		182EB87C204C727C00B2AF00 /* ReverseString */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ReverseString; sourceTree = BUILT_PRODUCTS_DIR; };
-		182EB87F204C727C00B2AF00 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		182EB888204C73C900B2AF00 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		182EB88A204C740500B2AF00 /* FirstMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstMethod.swift; sourceTree = "<group>"; };
+		182EB88C204C75B800B2AF00 /* SecondMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,9 @@
 		182EB87E204C727C00B2AF00 /* ReverseString */ = {
 			isa = PBXGroup;
 			children = (
-				182EB87F204C727C00B2AF00 /* main.swift */,
+				182EB888204C73C900B2AF00 /* main.swift */,
+				182EB88A204C740500B2AF00 /* FirstMethod.swift */,
+				182EB88C204C75B800B2AF00 /* SecondMethod.swift */,
 			);
 			path = ReverseString;
 			sourceTree = "<group>";
@@ -94,6 +100,7 @@
 				TargetAttributes = {
 					182EB87B204C727C00B2AF00 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -120,7 +127,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				182EB880204C727C00B2AF00 /* main.swift in Sources */,
+				182EB889204C73C900B2AF00 /* main.swift in Sources */,
+				182EB88D204C75B800B2AF00 /* SecondMethod.swift in Sources */,
+				182EB88B204C740500B2AF00 /* FirstMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,8 +245,11 @@
 		182EB884204C727C00B2AF00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -245,7 +257,9 @@
 		182EB885204C727C00B2AF00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
